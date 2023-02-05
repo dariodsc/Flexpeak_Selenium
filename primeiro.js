@@ -1,1 +1,7 @@
-console.log('Hello, World!')
+function dizer_ola(){
+    console.log('Hello, World!')
+}
+
+dizer_ola()
+
+// função em JS
