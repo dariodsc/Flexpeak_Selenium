@@ -1,4 +1,6 @@
-let Mes = 1
+// Exemplo de uso da ferramenta Case
+
+let Mes = 1                         
 
 switch (Mes) {
     case 1:
