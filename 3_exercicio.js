@@ -1,6 +1,6 @@
-function descreveMes(numero){
+function descreveMes(numero){       // Função que escreve na tela o mês de acordo com o número declarado
     
-    if (numero === 1){
+    if (numero === 1){              // Se o número for 1 irá mostrar Janeiro
         console.log('Janeiro')
     } else if (numero === 2){
         console.log('Fevereiro')
@@ -27,4 +27,4 @@ function descreveMes(numero){
     }
 }
 
-descreveMes(2)
+descreveMes(2)                      // Mês escolhido Fevereiro
