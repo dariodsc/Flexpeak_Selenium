@@ -9,7 +9,3 @@ function dizer_ola(){
 
 dizer_ola() // Chama a função
 
-//Exemplo 2
-function cumprimentar(nome) {
-  return "Olá, " + nome + "!";
-}

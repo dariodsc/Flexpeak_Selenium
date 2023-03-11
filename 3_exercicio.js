@@ -27,4 +27,5 @@ function descreveMes(numero){       // Função que escreve na tela o mês de ac
     }
 }
 
-descreveMes(2)                      // Mês escolhido Fevereiro
+descreveMes(1)                      // Mês escolhido Janeiro
+descreveMes(10)
