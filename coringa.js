@@ -1,6 +1,8 @@
 // Coringa JS
 console.log('Conringa JS')
 
+// .node na pasta recem criada para abrir o vscode já relacionada a pasta
+
 // Tipos de comentário **
 // comentário de uma linha
 
