@@ -1,0 +1,7 @@
+Dia 25.03
+
+1 - Criar pasta para o teste que será executado (Uma pasta para cada projeto de teste)
+2 - Na pasta criada (Caso esteja usando Linux?), abra o terminal e execute o comando = (code .). Abrirá o VSCode na pasta criada
+3 - Usar o comando no terminal npm init, assim irá criar o arquivo package.json
+
+Pesquisa sobre mocha, mocha chai para selenium
