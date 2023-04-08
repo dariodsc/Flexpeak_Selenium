@@ -1,7 +1,13 @@
-Dia 25.03
+Dia 25.03 (Primeiro teste)
 
 1 - Criar pasta para o teste que será executado (Uma pasta para cada projeto de teste)
 2 - Na pasta criada (Caso esteja usando Linux?), abra o terminal e execute o comando = (code .). Abrirá o VSCode na pasta criada
 3 - Usar o comando no terminal npm init, assim irá criar o arquivo package.json
+4 - Criar o arquivo de teste
+5 - Instalar as dependências para o teste 
+  npm install selenium-webdriver
+  npm install mocha
+  npm install mocha chai
+
 
 Pesquisa sobre mocha, mocha chai para selenium
