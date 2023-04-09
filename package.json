@@ -4,7 +4,7 @@
   "description": "Projeto de teste para a pagina SauceLabs",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --recursive --timeout 10000 tests/test.js"
+    "test": "mocha --recursive --timeout 10000 tests/*.js"
   },
   "keywords": [
     "test"
@@ -13,6 +13,10 @@
   "license": "ISC",
   "dependencies": {
     "chai": "^4.3.7",
-    "mocha": "^10.2.0"
+    "mocha": "^10.2.0",
+    "selenium-webdriver": "^4.8.2"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
   }
 }
