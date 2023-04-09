@@ -4,7 +4,8 @@
   "description": "Projeto de teste para a pagina SauceLabs",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --recursive --timeout 10000 tests/*.js"
+    "test": "mocha --recursive --timeout 10000 tests/test.js"
+    "test2" "mocha --recursive --timeout 10000 tests/test_logout.js"
   },
   "keywords": [
     "test"
