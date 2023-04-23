@@ -1,23 +1,20 @@
 {
-  "name": "ecommerce-test",
+  "name": "ecommerce-pom",
   "version": "1.0.0",
-  "description": "Projeto de teste para a pagina SauceLabs",
+  "description": "Em scripts, a descrição test chama o teste para execução",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --recursive --timeout 10000 tests/test.js"
-    "test2" "mocha --recursive --timeout 10000 tests/test_logout.js"
+    "test": "mocha --timeout 60000 tests/logintests.js"
   },
-  "keywords": [
-    "test"
-  ],
-  "author": "Dario",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "chai": "^4.3.7",
-    "mocha": "^10.2.0",
-    "selenium-webdriver": "^4.8.2"
+    "chromedriver": "^112.0.0",
+    "selenium-webdriver": "^4.9.0"
   },
   "devDependencies": {
-    "jest": "^29.5.0"
+    "mocha": "^10.2.0"
   }
 }
