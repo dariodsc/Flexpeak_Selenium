@@ -1,31 +1,35 @@
-const { Builder } = require("selenium-webdriver");
-var driver = new Builder().forBrowser("chrome").build();
-
-class BasePage {
+const { Builder } = require("selenium-webdriver");          // importa o selenium webdriver
+var driver = new Builder().forBrowser("chrome").build();    // objeto para controlar o navegador (Chrome)
+driver.manage().setTimeouts({ implicit: (10000) });
+class BasePage {                                            // Contém metodos que serão usados para interagir com a página
 
     constructor() {
         global.driver = driver;
-        /*  Torna o objeto DRIVER global
-        para que possa ser usado em outros testes */
     }
 
-    goTo(url) {
-        driver.get(url);
-        driver.sleep(5000);
-        /*Este método goTo navega para uma URL passada como parâmetro
-        usando o método get do objeto driver. 
-        Em seguida, espera por 5 se gundos usando o método sleep do objeto driver.*/
+    async goTo(url) {                                       // navega para URL especificada
+        await driver.get(url);
     }
 
-    enterText(locator, info) {
-        driver.findElement(locator).sendKeys(info);
-        driver.sleep(5000);
+    async enterText(locator, info) {                        // insere o texto no campo referenciado por LOCATOR
+        await driver.findElement(locator).sendKeys(info);
     }
 
-    mouseClick(locator) {
-        driver.findElement(locator).click();
-        driver.sleep(5000);
+    async mouseClick(locator) {                             // Clica no elemento referenciado pelo LOCATOR
+        await driver.findElement(locator).click();
+    }
+
+    async getElementText(locator) {                         // Retorna o texto referenciado pelo LOCATOR
+        await driver.findElement(locator).getText()
+    }
+
+    async elementIsVisible(locator) {                       // Retorna 'true' se o elemento referenciado pelo LOCATOR estiver vísivel na página, senão FALSE
+        return await driver.findElement(locator).isDisplayed()
+    }
+
+    async closeWindow() {                                   // Fecha o navegador
+        await driver.quit()
     }
 
 }
-module.exports = BasePage;
+module.exports = BasePage;                                  // Exporta o modulo para que possa ser usado em outros módulos Node.js
